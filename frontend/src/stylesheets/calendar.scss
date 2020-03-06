@@ -1,0 +1,65 @@
+.calendar{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.week{
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+}
+
+.date-button{
+    width: 14.28%;
+    min-width: 125px;
+    max-height: 200px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+
+.event-index-item{
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    text-align: start;
+}
+
+.event-pending-item{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    text-align: start;
+
+}
+
+.create-form-blank{
+    height: 100%;
+}
+
+.create-form-date{
+    min-height: 18px;
+}
+
+.weekday{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+}
+
+.weekday-items{
+    display: flex;
+    width: 14.28%;
+    min-width: 125px;
+    justify-content: center;
+    background-color: #e9e9e9;
+    // border-right: 1px solid gray;
+}

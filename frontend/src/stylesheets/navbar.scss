@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .sidebar-btn {
+        margin-left: 20px;
+    }
+
+    .logout-btn {
+        margin-right: 20px;
+    }
+}

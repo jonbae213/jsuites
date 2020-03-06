@@ -1,0 +1,17 @@
+.select-depts {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+  width: 110px;
+
+  .select-depts-title {
+    width: 100%;
+  }
+
+  .checkbox-container {
+    width: 100%;
+    padding-top: 5px;
+  }
+}

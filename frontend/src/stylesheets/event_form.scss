@@ -1,0 +1,76 @@
+.event-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  background-color: white;
+  height: 90%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+
+  .event-form-title {
+    height: 40px;
+  }
+
+  .event-form-description {
+    height: 150px;
+    width: 80%;
+    resize: none;
+  }
+
+  button {
+    padding: 7px;
+  }
+
+
+  h1 {
+    font-size: 18px;
+    height: auto;
+  }
+
+  .event-form-list-item {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    label {
+      width: 100%;
+    }
+
+    input, textarea {
+      width: 80%;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  }
+}
+
+.add-note-list-item:hover {
+  cursor: pointer;
+}
+
+.invisible {
+  display: none;
+}
+
+.add-note-dropdown {
+  position: relative;
+}
+
+.add-note-list {
+  position: fixed;
+  background-color: white;
+
+  .add-note-list-item {
+    border: 1px solid gray;
+  }
+}
+
+.event-form-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

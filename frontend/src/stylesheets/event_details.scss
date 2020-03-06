@@ -1,0 +1,32 @@
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 90%;
+  box-sizing: border-box;
+
+  h1 {
+    width: 100%;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .event-details-item {
+    width: 100%;
+    
+    h2, p {
+      font-size: 16px;
+    }
+  }
+
+  .event-details-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
