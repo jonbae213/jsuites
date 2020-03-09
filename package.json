@@ -2,6 +2,9 @@
   "name": "J-Suites",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "10.13.0"
+  },
   "main": "index.js",
   "scripts": {
     "server:debug": "nodemon --inspect app.js",
