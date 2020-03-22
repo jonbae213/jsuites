@@ -42,8 +42,5 @@
     "redux-thunk": "^2.3.0",
     "validator": "^12.1.0",
     "webpack": "4.41.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
   }
 }
