@@ -42,8 +42,8 @@ class DispEventItems extends React.Component{
   }
 
   sidebar(){
-      const {openModal, departments, events, user, eventIds } = this.props.calProps 
-      const { day, calProps } = this.props;
+      const {openModal, events, user, eventIds } = this.props.calProps 
+      const { day } = this.props;
       let dayEvents = []
 
       if (eventIds.length){
@@ -69,14 +69,8 @@ class DispEventItems extends React.Component{
 
   render(){
     const { day, calProps } = this.props;
-    const { user, departments, events, openModal } = calProps;
-    const dayEvents = [];
-
-    // if( day && Object.keys(departments).length ){
-    //     return this.sidebar()
-    // } else {
-    //     return( <div></div>)
-    // }
+    const { departments, events } = calProps;
+    
      const side = (day && Object.keys(departments).length && Object.keys(events).length) ? this.sidebar() : null;
     return <>
         {side}

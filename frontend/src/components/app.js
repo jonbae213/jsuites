@@ -7,7 +7,6 @@ import NavBarContainer from './navbar/navbar_container';
 import SidebarContainer from './sidebar/sidebar_container';
 import '../stylesheets/master.scss';
 import Modal from './modal/modal';
-const path = require('path');
 
 const App = () => (
   <>

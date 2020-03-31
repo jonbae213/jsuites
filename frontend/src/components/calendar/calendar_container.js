@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import Calendar from './calendar';
 import { openModal } from '../../actions/modal_actions';
-import { getDept } from '../../actions/department_actions';
+// import { getDept } from '../../actions/department_actions';
 
 // const getDepts = ( depts, sidebar ) =>{
 //   let selectedDepts = {}

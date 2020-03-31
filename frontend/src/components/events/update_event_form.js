@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { updateEvent, createEvent, deleteEvent, approveEvent } from '../../actions/event_actions';
+import { updateEvent, deleteEvent, approveEvent } from '../../actions/event_actions';
 import { closeModal } from '../../actions/modal_actions';
 import EventForm from './event_form';
 

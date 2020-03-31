@@ -33,7 +33,7 @@ class EventDetails extends React.Component {
   }
 
   coreDetails() {
-    return Object.keys(this.props.event).map(key => {
+    let details = Object.keys(this.props.event).map(key => {
       if (key === 'title' || key === 'description') {
         return (
           <li className="event-details-item">
@@ -43,6 +43,7 @@ class EventDetails extends React.Component {
         )
       }
     });
+    return details;
   }
 
   approveEvent(e, event){

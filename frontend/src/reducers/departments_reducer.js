@@ -1,6 +1,5 @@
 import {
   RECEIVE_ALL_DEPARTMENTS,
-  RECEIVE_DEPARTMENT
 } from '../actions/department_actions';
 
 export default (state = {}, action) => {
