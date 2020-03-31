@@ -21,11 +21,4 @@ const App = () => (
   </>
 );
 
-if (process.env.NODE_ENV === "production") {
-  App.use(express.static("frontend/build"));
-  App.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
-  });
-}
-
 export default App;
