@@ -5,11 +5,11 @@ const db = require('./config/keys').mongoURI;
 const users = require('./routes/api/users');
 const events = require('./routes/api/events');
 const departments = require('./routes/api/departments')
-const User = require('./models/User');
 const bodyParser = require('body-parser');
-const bcrypt = require('bcryptjs')
 const passport = require('passport')
 const path = require("path");
+const port = process.env.PORT || 5000;
+const server = app.listen(port, () => console.log(`Server is running on port ${port}`));
 
 
 mongoose
@@ -27,20 +27,15 @@ if (process.env.NODE_ENV === "production") {
   app.get("/", (req, res) => res.send("Inside Express"));
 }
 
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
-
 app.use(passport.initialize());
 require('./config/passport')(passport);
-
-
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use('/api/users/', users);
 app.use('/api/events/', events);
 app.use('/api/departments/', departments);
 
 
-const port = process.env.PORT || 5000; 
-app.listen(port, () => console.log(`Server is running on port ${port}`));
 
 
 
