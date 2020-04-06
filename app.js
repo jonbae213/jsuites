@@ -13,7 +13,7 @@ const server = app.listen(port, () => console.log(`Server is running on port ${p
 
 
 mongoose
-    .connect(db ,{ useUnifiedTopology: true, useNewUrlParser: true})
+    .connect(db ,{ useNewUrlParser: true})
     .then(() => console.log('Connected to mongoDB'))
     .catch( err => console.log(err));
     
