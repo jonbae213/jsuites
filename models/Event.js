@@ -28,11 +28,6 @@ const EventSchema = new Schema ({
         required: true
     },
 
-    // date: {
-    //     type: Date,
-    //     default: Date.now
-    // },
-
     extras: {
         type: Object,
         required: false

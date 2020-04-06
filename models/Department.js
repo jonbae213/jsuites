@@ -8,10 +8,6 @@ const DepartmentSchema = new Schema({
         required: true
     },
     
-    // organizationId: {
-    //     type: Schema.Types.ObjectId,
-    //     ref: 'organizations'
-    // },
     organizationId: {
         type: Number,
         required: true

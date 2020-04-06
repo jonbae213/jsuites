@@ -31,9 +31,9 @@ app.use(passport.initialize());
 require('./config/passport')(passport);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use('/api/users/', users);
-app.use('/api/events/', events);
-app.use('/api/departments/', departments);
+app.use('/api/users', users);
+app.use('/api/events', events);
+app.use('/api/departments', departments);
 
 
 
